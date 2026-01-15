@@ -72,7 +72,7 @@ public class PlayerController : MonoBehaviour
 
         gameObject.transform.forward = position; //Indico la direzione in cui sta vedendo il personaggio
 
-        Vector3 rotation = Vector3.up * (_h * Time.deltaTime * _angularVelocity);
+        Vector3 rotation = Vector3.up * ( Time.deltaTime * _angularVelocity);
         //// Calculate the rotation for this frame
         Quaternion deltaRotation = Quaternion.Euler(rotation);
 
